@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">683740059717732</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">458dd87a36395016a3ae46061a7ba9bd</string>
+    <string name="app_name">RentX</string>
+</resources>

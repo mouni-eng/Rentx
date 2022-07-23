@@ -1,0 +1,8 @@
+{
+  "apiBaseUrl": "https://rentx.tech/api",
+  "publicFilesUrl": "",
+  "debugEnabled": false,
+  "reportErrors": true,
+  "logErrors": true,
+  "activeMapProvider": "openStreet"
+}

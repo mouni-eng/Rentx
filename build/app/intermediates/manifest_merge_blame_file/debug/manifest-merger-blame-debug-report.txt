@@ -1,0 +1,300 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.inoventgroup.rentx"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:4:5-67
+14-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:5:5-81
+15-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:5:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:6:5-79
+16-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:6:22-76
+17
+18    <queries>
+18-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:68:5-79:15
+19
+20        <!-- If your app checks for SMS support -->
+21        <intent>
+21-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:70:9-73:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:13-65
+22-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:21-62
+23
+24            <data android:scheme="sms" />
+24-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:13-42
+24-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:19-39
+25        </intent>
+26        <!-- If your app checks for call support -->
+27        <intent>
+27-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:75:9-78:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:13-65
+28-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:21-62
+29
+30            <data android:scheme="tel" />
+30-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:13-42
+30-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:19-39
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+34-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+34-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+35    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+35-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:28:5-79
+35-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:28:22-76
+36    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+36-->[com.android.installreferrer:installreferrer:1.0] C:\Users\mouni\.gradle\caches\transforms-3\acdb59846f1e35e15a452b6f8b92bb22\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+36-->[com.android.installreferrer:installreferrer:1.0] C:\Users\mouni\.gradle\caches\transforms-3\acdb59846f1e35e15a452b6f8b92bb22\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+37
+38    <application
+39        android:name="android.app.Application"
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.8.0] C:\Users\mouni\.gradle\caches\transforms-3\2647c6f9e207279b3fe6085096ed5274\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+43        android:label="rentx"
+44        android:requestLegacyExternalStorage="true"
+45        android:supportsRtl="true" >
+45-->[com.facebook.android:facebook-login:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\81decf475ad5675a7811298d09ca29c8\transformed\jetified-facebook-login-13.2.0\AndroidManifest.xml:28:18-44
+46        <meta-data
+47            android:name="com.google.android.geo.API_KEY"
+48            android:value="" />
+49
+50        <activity
+51            android:name="com.inoventgroup.rentx.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:exported="true"
+54            android:hardwareAccelerated="true"
+55            android:launchMode="singleTop"
+56            android:theme="@style/LaunchTheme"
+57            android:windowSoftInputMode="adjustResize" >
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+66                android:name="io.flutter.embedding.android.NormalTheme"
+67                android:resource="@style/NormalTheme" />
+68
+69            <intent-filter>
+70                <action android:name="android.intent.action.MAIN" />
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+73            </intent-filter>
+74        </activity>
+75        <activity
+76            android:name="com.facebook.FacebookActivity"
+77            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+78            android:label="@string/app_name"
+79            android:theme="@style/com_facebook_activity_theme" />
+79-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:33:13-63
+80        <activity
+81            android:name="com.facebook.CustomTabActivity"
+82            android:exported="true" >
+83            <intent-filter>
+84                <action android:name="android.intent.action.VIEW" />
+84-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:13-65
+84-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:21-62
+85
+86                <category android:name="android.intent.category.DEFAULT" />
+86-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:42:17-76
+86-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:42:27-73
+87                <category android:name="android.intent.category.BROWSABLE" />
+87-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:43:17-78
+87-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:43:27-75
+88
+89                <data android:scheme="@string/fb_login_protocol_scheme" />
+89-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:13-42
+89-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:19-39
+90            </intent-filter>
+91            <intent-filter>
+91-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:39:13-48:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:13-65
+92-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:71:21-62
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:42:17-76
+94-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:42:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:43:17-78
+95-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:43:27-75
+96
+97                <data
+97-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:13-42
+98                    android:host="cct.com.inoventgroup.rentx"
+99                    android:scheme="fbconnect" />
+99-->E:\upwork\rentX-mobile\android\app\src\main\AndroidManifest.xml:72:19-39
+100            </intent-filter>
+101        </activity>
+102
+103        <!--
+104             Don't delete the meta-data below.
+105             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+106        -->
+107        <meta-data
+108            android:name="flutterEmbedding"
+109            android:value="2" />
+110        <meta-data
+111            android:name="com.facebook.sdk.ApplicationId"
+112            android:value="@string/facebook_app_id" />
+113        <meta-data
+114            android:name="com.facebook.sdk.ClientToken"
+115            android:value="@string/facebook_client_token" />
+116
+117        <service
+117-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:56
+118            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+118-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-77
+119            android:enabled="true"
+119-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-35
+120            android:exported="false"
+120-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+121            android:foregroundServiceType="location" />
+121-->[:geolocator_android] E:\upwork\rentX-mobile\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-53
+122
+123        <provider
+123-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+124            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+124-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+125            android:authorities="com.inoventgroup.rentx.flutter.image_provider"
+125-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+126            android:exported="false"
+126-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+127            android:grantUriPermissions="true" >
+127-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+128            <meta-data
+128-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+130                android:resource="@xml/flutter_image_picker_file_paths" />
+130-->[:image_picker_android] E:\upwork\rentX-mobile\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+131        </provider>
+132
+133        <activity
+133-->[:url_launcher_android] E:\upwork\rentX-mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+134            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+134-->[:url_launcher_android] E:\upwork\rentX-mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+135            android:exported="false"
+135-->[:url_launcher_android] E:\upwork\rentX-mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+136            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+136-->[:url_launcher_android] E:\upwork\rentX-mobile\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+137        <activity
+137-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:23:9-27:75
+138            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+138-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:24:13-93
+139            android:excludeFromRecents="true"
+139-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:25:13-46
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:26:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:27:13-72
+142        <!--
+143            Service handling Google Sign-In user revocation. For apps that do not integrate with
+144            Google Sign-In, this service will never be started.
+145        -->
+146        <service
+146-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:33:9-37:51
+147            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+147-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:34:13-89
+148            android:exported="true"
+148-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:35:13-36
+149            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+149-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:36:13-107
+150            android:visibleToInstantApps="true" />
+150-->[com.google.android.gms:play-services-auth:20.1.0] C:\Users\mouni\.gradle\caches\transforms-3\9354a1898f4965f6bc770fc72dde0e70\transformed\jetified-play-services-auth-20.1.0\AndroidManifest.xml:37:13-48
+151
+152        <activity
+152-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\mouni\.gradle\caches\transforms-3\12873b0bf3d773b029a0576bae836f3e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+153            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+153-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\mouni\.gradle\caches\transforms-3\12873b0bf3d773b029a0576bae836f3e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+154            android:exported="false"
+154-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\mouni\.gradle\caches\transforms-3\12873b0bf3d773b029a0576bae836f3e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+155-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\mouni\.gradle\caches\transforms-3\12873b0bf3d773b029a0576bae836f3e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+156
+157        <meta-data
+157-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\mouni\.gradle\caches\transforms-3\5aab2ae0cee5fcdad464526e2d654de1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+158            android:name="com.google.android.gms.version"
+158-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\mouni\.gradle\caches\transforms-3\5aab2ae0cee5fcdad464526e2d654de1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+159            android:value="@integer/google_play_services_version" />
+159-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\mouni\.gradle\caches\transforms-3\5aab2ae0cee5fcdad464526e2d654de1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+160
+161        <activity android:name="com.facebook.CustomTabMainActivity" />
+161-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:34:9-71
+161-->[com.facebook.android:facebook-common:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\b32cd01af1da1f3299a9197bb7685b1a\transformed\jetified-facebook-common-13.2.0\AndroidManifest.xml:34:19-68
+162        <!--
+163         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+164         with the application context. This config is merged in with the host app's manifest,
+165         but there can only be one provider with the same authority activated at any given
+166         point; so if the end user has two or more different apps that use Facebook SDK, only the
+167         first one will be able to use the provider. To work around this problem, we use the
+168         following placeholder in the authority to identify each host application as if it was
+169         a completely different provider.
+170        -->
+171        <provider
+171-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:41:9-44:40
+172            android:name="com.facebook.internal.FacebookInitProvider"
+172-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:42:13-70
+173            android:authorities="com.inoventgroup.rentx.FacebookInitProvider"
+173-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:43:13-72
+174            android:exported="false" />
+174-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:44:13-37
+175
+176        <receiver
+176-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:46:9-52:20
+177            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+177-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:47:13-86
+178            android:exported="false" >
+178-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:48:13-37
+179            <intent-filter>
+179-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:49:13-51:29
+180                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+180-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:50:17-95
+180-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:50:25-92
+181            </intent-filter>
+182        </receiver>
+183        <receiver
+183-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:53:9-59:20
+184            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+184-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:54:13-118
+185            android:exported="false" >
+185-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:55:13-37
+186            <intent-filter>
+186-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:56:13-58:29
+187                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+187-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:57:17-103
+187-->[com.facebook.android:facebook-core:13.2.0] C:\Users\mouni\.gradle\caches\transforms-3\eb3b520105c3a066f3a2237cbea1ea73\transformed\jetified-facebook-core-13.2.0\AndroidManifest.xml:57:25-100
+188            </intent-filter>
+189        </receiver>
+190
+191        <uses-library
+191-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+192            android:name="androidx.window.extensions"
+192-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+193            android:required="false" />
+193-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+194        <uses-library
+194-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+195            android:name="androidx.window.sidecar"
+195-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+196            android:required="false" />
+196-->[androidx.window:window:1.0.0-beta04] C:\Users\mouni\.gradle\caches\transforms-3\c044f703faab2e399537974fd6bbc35e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+197    </application>
+198
+199</manifest>

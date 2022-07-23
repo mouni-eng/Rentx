@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.inoventgroup.rentx.app-mergeDebugResources-24:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\mouni\\.gradle\\caches\\transforms-3\\08f1f6d164eea37ff88203a1eb8f8061\\transformed\\appcompat-1.1.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}
